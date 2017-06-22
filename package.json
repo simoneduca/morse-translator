@@ -67,14 +67,12 @@
     "node": "^8.0.0",
     "npm": "^5.0.0"
   },
-  "homepage": "http://simoneduca.github.io/morse-translator",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "react-scripts build",
-    "deploy": "npm run build && gh-pages -d build",
-    "eslint": "eslint .",
     "start": "BABEL_ENV=development webpack-dashboard -- babel-node server.js",
     "test": "NODE_ENV=development BABEL_ENV=test mocha $(find test -name *.test.jsx) --compilers js:babel-core/register || true",
-    "test-travis": "NODE_ENV=development BABEL_ENV=test mocha $(find test -name *.test.jsx) --compilers js:babel-core/register"
+    "test-travis": "NODE_ENV=development BABEL_ENV=test mocha $(find test -name *.test.jsx) --compilers js:babel-core/register",
+    "eslint": "eslint .",
+    "build": "BABEL_ENV=production webpack --config webpack.production.config.js -p"
   }
 }
