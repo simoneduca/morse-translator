@@ -1,4 +1,4 @@
-# Talk In Code
+# Morse Translator
 
 _It translates your messages into Morse code_.
 
