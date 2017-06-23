@@ -9,10 +9,10 @@ const SocialLinks = (props) => {
   const text = encodeURIComponent(props.messages.morse);
   const url = encodeURIComponent(`http://simoneduca.com/morse-translator/#/message/${props.params.message_id}`);
   return (
-    <div className="share-buttons">
+    <div>
       <a
         className="social-link"
-        href={`http://twitter.com/share?url=${url}&text=${text}`}
+        href={`http://twitter.com/intent/tweet?url=${url}&text=${text}`}
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -20,19 +20,19 @@ const SocialLinks = (props) => {
       </a>
       <a
         className="social-link"
-        href={`http://twitter.com/share?url=${url}&text=${text}`}
+        href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}
         rel="noopener noreferrer"
         target="_blank"
       >
-        TWEET IT
+        FACEBOOK IT
       </a>
       <a
         className="social-link"
-        href={`http://twitter.com/share?url=${url}&text=${text}`}
+        href={`https://plus.google.com/share?url=${url}`}
         rel="noopener noreferrer"
         target="_blank"
       >
-        TWEET IT
+        G+ IT
       </a>
     </div>
   );
