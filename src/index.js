@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { browserHistory, Router, Route } from 'react-router';
+import { hashHistory, Router, Route } from 'react-router';
 import { Provider } from 'react-redux';
 
 import App from './components/App';
@@ -12,7 +12,7 @@ const store = configureStore();
 
 ReactDOM.render((
   <Provider store={store}>
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
       <Route path="/" component={App} />
       <Route path="/message/:message_id" component={App} />
     </Router>

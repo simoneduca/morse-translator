@@ -1,4 +1,4 @@
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 import alphabet from '../constants/alphabet';
 import base from '../constants/base';
 
@@ -38,7 +38,7 @@ const clearField = () => {
     dispatch({
       type: CLEAR_FIELD,
     });
-    browserHistory.push('/');
+    hashHistory.push('/');
   };
 };
 
@@ -78,7 +78,7 @@ const translate = (text) => {
       },
     })
     .then((response) => {
-      browserHistory.push(`/message/${response.path.o[1]}`);
+      hashHistory.push(`/message/${response.path.o[1]}`);
     })
     .catch((error) => {
       console.log('error: ', error);
