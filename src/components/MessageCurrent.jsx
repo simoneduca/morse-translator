@@ -14,16 +14,19 @@ class MessageCurrent extends Component {
   render() {
     return (
       <div>
-        <input
-          className="input-field"
-          readOnly="true"
-          type="text"
-          value={(this.props.messages) ? this.props.messages.morse : 'dio cane'}
-        />{' '}
-        <button
-          className="delete-button"
-          onClick={this.delete}
-        /><br />
+        <div className="input-area">
+          <textarea
+            className="input-field"
+            readOnly="true"
+            rows="2"
+            type="text"
+            value={(this.props.messages) ? this.props.messages.morse : 'dio cane'}
+          />
+          <button
+            className="delete-button"
+            onClick={this.delete}
+          />
+        </div>
         <div className="divider" />
         <SocialLinks messages={this.props.messages} params={this.props.params} />
       </div>

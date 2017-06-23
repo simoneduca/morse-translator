@@ -16,7 +16,6 @@ class App extends React.Component {
         <section className="content-section">
           <MessageInputContainer props={this.props} />
         </section>
-        <span className="divider" />
       </div>
     );
   }
