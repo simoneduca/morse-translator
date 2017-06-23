@@ -15,7 +15,7 @@ module.exports = {
 
   output: {
     path: path.join(__dirname, '/dist/'),
-    filename: '[name]-[hash].min.js',
+    filename: 'static/js/[name]-[hash].min.js',
   },
 
   plugins: [
@@ -26,7 +26,7 @@ module.exports = {
       filename: 'index.html',
     }),
     new ExtractTextPlugin({
-      filename: '[name]-[hash].min.css',
+      filename: 'static/css/[name]-[hash].min.css',
       allChunks: true,
     }),
     new webpack.optimize.UglifyJsPlugin({

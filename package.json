@@ -74,7 +74,6 @@
     "test": "NODE_ENV=development BABEL_ENV=test mocha $(find test -name *.test.jsx) --compilers js:babel-core/register || true",
     "test-travis": "NODE_ENV=development BABEL_ENV=test mocha $(find test -name *.test.jsx) --compilers js:babel-core/register",
     "eslint": "eslint .",
-    "build": "react-scripts build",
-    "deploy": "npm run build && gh-pages -d build"
+    "build": "NODE_ENV=production BABEL_ENV=production webpack --config webpack.production.config.js -p"
   }
 }
