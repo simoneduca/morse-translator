@@ -16,9 +16,9 @@ __Development mode with livereload:__
 
 ```npm run start```
 
-__When you are done, create a production-ready version of the JS bundle:__
+__When you are done, create a production-ready version of the JS bundle and deploy it to GitHub:__
 
-```npm run build```
+```npm run deploy```
 
 ## License
 
