@@ -7,7 +7,7 @@ const defaultProps = {};
 
 const SocialLinks = (props) => {
   const text = encodeURIComponent(props.messages.morse);
-  const url = encodeURIComponent(`http://simoneduca.com/#/morse-translator/message/${props.params.message_id}`);
+  const url = encodeURIComponent(`http://simoneduca.com/morse-translator/#/message/${props.params.message_id}`);
   return (
     <div className="share-buttons">
       <a
