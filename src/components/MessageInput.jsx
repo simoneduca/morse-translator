@@ -41,18 +41,21 @@ class MessageInput extends Component {
   render() {
     return (
       <div>
-        <input
-          autoFocus="true"
-          className="input-field"
-          onChange={this.handleChange}
-          placeholder="ENTER YOUR MESSAGE HERE"
-          type="text"
-          value={this.props.messages.morse || this.state.original}
-        />{' '}
-        <button
-          className="delete-button"
-          onClick={this.delete}
-        /><br />
+        <div className="input-area">
+          <textarea
+            autoFocus="true"
+            className="input-field"
+            onChange={this.handleChange}
+            placeholder="ENTER YOUR MESSAGE TO BE CODED HERE"
+            rows="2"
+            type="text"
+            value={this.props.messages.morse || this.state.original}
+          />
+          <button
+            className="delete-button"
+            onClick={this.delete}
+          />
+        </div>
         <div className="divider" />
         <button
           className="translate-button"

@@ -13,7 +13,6 @@ class App extends React.Component {
           </div>
           <p>Translate your message into Morse Code and share it with your friends</p>
         </header>
-        <span className="divider" />
         <section className="content-section">
           <MessageInputContainer props={this.props} />
         </section>
