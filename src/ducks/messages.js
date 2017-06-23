@@ -52,7 +52,6 @@ const fetchCurrent = (id) => {
         morse: data.morse,
         original: data.original,
       });
-      console.log('current message: ', data);
     }).catch((error) => {
       console.log(error);
     });
