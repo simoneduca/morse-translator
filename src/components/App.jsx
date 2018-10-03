@@ -11,7 +11,7 @@ class App extends React.Component {
           <div className="title">
             TALK IN CODE <span className="smaller-font-size">- .- .-.. -.- / .. -. / -.-. --- -.. .</span>
           </div>
-          <p>Translate your message into Morse Code and share it with your friends</p>
+          <p>Translate your message into Morse Code and share it</p>
         </header>
         <section className="content-section">
           <MessageInputContainer props={this.props} />
